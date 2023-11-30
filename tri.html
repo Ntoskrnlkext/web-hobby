@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- Ez a sor határozza meg, hogy ez egy HTML dokumentum lesz, ezzel üzenve a böngészők számára. -->
+<html lang="en">
+<!-- Ez a HTML fájlunk gyökéreleme, kötelező ennek következnie a !DOCTYPE html rész után. -->
+
+<head>
+    <!-- Ezt magyarul fejnek, fejszekciónak vagy fejrésznek hívjuk. Alapvető információkat tartalmaz a HTML oldalunkról. Például a következő szekciót. -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example!</title>
+    <!-- Ez határozza meg a HTML oldal nevét. A böngésző innen olvassa ki a böngésző címsorában látható szöveget. -->
+</head>
+
+<body>
+    <!-- Ez a dokumentum „test” része, ezután kell írni a weboldal tartalmát. Az e mögé írt tartalmak fognak megjelenni a böngészőben a weboldal részeként. Ezt követni fog majd még egy </body> tag. De ezt nem rakhatjuk ki még most. A záró tag-et csak akkor rakhatjuk ki, ha a weboldalunkat már feltöltöttük tartalommal. -->
+    <p>This example batch file displays the value entered in the input zone,
+        and then terminates. (Note: It does not
+        matter if commands are lowercase or uppercase unless working with
+        variables)</p>
+    <!-- Ez a bekezdést jelöli. Az ezután írt szöveget normál méretben fogja megjeleníteni a böngésző. -->
+    <p>The interpreter executes each line in turn, starting with the first.
+        The @ symbol at the start of any line prevents the prompt from
+        displaying that command as it is executed. The command ECHO OFF
+        turns off the prompt permanently, or until it is turned on again.
+        The combined @ECHO OFF is often as here the first line of a batch
+        file, preventing any commands from displaying, itself included. Then
+        the next line is executed and the ECHO (input text) command outputs
+        (input text). After the text is displayed, the script terminates, as there
+        are no more commands. In Windows, if the script is executed from an
+        already running command prompt window, the window remains open at
+        the prompt as in MS-DOS; otherwise, the window closes on
+        termination.</p>
+    <br>
+    <!-- inserts a single line break -->
+    <p>@echo off</p>
+    <p>echo <input type="text" id="output"></p>
+    <button onclick="document.getElementById('run').innerHTML = document.getElementById('output').value">Run!</button>
+    <!-- defines a clickable button. -->
+    <p>Output : </p>
+    <p id="run"></p>
+    <br>
+    <br>
+    <br>
+    <button onclick="location.href = 'sec.html';" id="myButton" class="float-left submit-button">Back to Home</button>
+
+</html>
